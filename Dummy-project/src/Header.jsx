@@ -1,7 +1,10 @@
 import React from 'react'
 import hero from "./assets/hero.png"
 
+
+
 const Header = () => {
+
     function handleClick(){
         alert("function called")
     }
