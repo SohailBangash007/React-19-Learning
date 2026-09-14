@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Functional from './Functional'
 import ButtonEvents from './ButtonEvents'
+import State from './State'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Header />
       <Functional />
       <ButtonEvents />
+      <State />
     </div>
   )
 }
