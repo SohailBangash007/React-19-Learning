@@ -37,7 +37,7 @@ const Functional = () => {
         <h2>{x + y}</h2>
         <p>{Fruit()}</p>
       </div>
-      <h2>{operation(10, 20, "")}</h2>
+      <h2>{operation(10,20, " ")}</h2>
       <h1>{userObj.Address}</h1>
       <input type="text" value={name} />
       <hr />
