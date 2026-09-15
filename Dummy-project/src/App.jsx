@@ -5,6 +5,7 @@ import ButtonEvents from './ButtonEvents'
 import State from './State'
 import Toggle from './Toggle'
 import MultipleCondition from './MultipleCondition'
+import Props from './Props'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <State />
       <Toggle />
       <MultipleCondition />
+      <Props text1={"Hey This is Sohail Bangash"} name={"Sohail Bngash"}/>
       
     </div>
   )
