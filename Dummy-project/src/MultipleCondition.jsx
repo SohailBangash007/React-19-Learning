@@ -99,7 +99,7 @@ const MultipleCondition = () => {
               Manan Bangash
             </h1>
           ) : (
-            <h1 style={{ color: "#6b7280", margin: 0 }}>
+            <h1 style={{ color: "#14b", margin: 0 }}>
               The condition is False
             </h1>
           )}
