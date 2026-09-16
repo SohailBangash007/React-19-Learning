@@ -7,6 +7,8 @@ import Toggle from './Toggle'
 import MultipleCondition from './MultipleCondition'
 import Props from './Props'
 import StudentName from './StudentName'
+import DefaultProps from './DefaultProps'
+import PropsPass from './PropsPass'
 
 const App = () => {
 
@@ -57,7 +59,25 @@ const App = () => {
       <Props name={userObj}/>
       <Props name={userObj2}/>
       <Props name={userObj3}/>
-      
+       <DefaultProps name="SOhail Bangash"/>
+       <DefaultProps name="Subhan" />
+
+       <PropsPass color="blue">
+       <h1>Front-end Developer</h1>
+       </PropsPass>
+
+       <PropsPass color="red">
+       <h1>Back-end Developer</h1>
+       </PropsPass>
+
+       <PropsPass color="green">
+       <h1>Full-Stack Developer</h1>
+       </PropsPass>
+
+       <PropsPass >
+       <h1>Software Developer</h1>
+       </PropsPass>
+
     </div>
   )
 }
