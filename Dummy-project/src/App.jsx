@@ -10,6 +10,7 @@ import StudentName from './StudentName'
 import DefaultProps from './DefaultProps'
 import PropsPass from './PropsPass'
 import InputField from './InputField'
+import Forms from './Forms'
 
 const App = () => {
 
@@ -80,6 +81,7 @@ const App = () => {
        </PropsPass>
 
        <InputField />
+       <Forms />
 
     </div>
   )
