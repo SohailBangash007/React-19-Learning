@@ -13,6 +13,7 @@ import InputField from './InputField'
 import Forms from './Forms'
 import Checkbox from './Checkbox'
 import RadioButton from './RadioButton'
+import LoopMap from './LoopMap'
 
 const App = () => {
 
@@ -86,6 +87,7 @@ const App = () => {
        <Forms />
        <Checkbox />
        <RadioButton />
+       <LoopMap />
 
     </div>
   )
