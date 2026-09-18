@@ -12,6 +12,7 @@ import PropsPass from './PropsPass'
 import InputField from './InputField'
 import Forms from './Forms'
 import Checkbox from './Checkbox'
+import RadioButton from './RadioButton'
 
 const App = () => {
 
@@ -84,6 +85,7 @@ const App = () => {
        <InputField />
        <Forms />
        <Checkbox />
+       <RadioButton />
 
     </div>
   )

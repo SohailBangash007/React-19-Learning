@@ -37,6 +37,7 @@ const Checkbox = () => {
         <input onChange={handlerCheckbox} type="checkbox" id="java"  value="java"/>
         <label htmlFor="java">Java</label>
       </div>
+      <h1>Selected language : {skills}</h1>
     </div>
   );
 };
