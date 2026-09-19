@@ -14,6 +14,7 @@ import Forms from './Forms'
 import Checkbox from './Checkbox'
 import RadioButton from './RadioButton'
 import LoopMap from './LoopMap'
+import ReuseComponent from './ReuseComponent'
 
 const App = () => {
 
@@ -88,6 +89,7 @@ const App = () => {
        <Checkbox />
        <RadioButton />
        <LoopMap />
+       <ReuseComponent />
 
     </div>
   )
