@@ -16,6 +16,7 @@ import RadioButton from "./RadioButton";
 import LoopMap from "./LoopMap";
 import ReuseComponent from "./ReuseComponent";
 import ClockTask from "./ClockTask";
+import NestedLoop from "./NestedLoop";
 
 const App = () => {
   let userObj = {
@@ -100,6 +101,8 @@ const App = () => {
           <option value="orange">orange</option>
         </select>
       </div>
+        <NestedLoop />
+
     </div>
   );
 };
