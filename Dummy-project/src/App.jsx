@@ -46,6 +46,7 @@ const App = () => {
   const [color, setColor] = useState("green");
   const [counter, setCounter] = useState(0);
   const [Data, setData] = useState(0);
+  const [Display, setDisplay] = useState("");
 
   return (
     <div>
@@ -96,7 +97,14 @@ const App = () => {
         <ClockTask color={color} />
         <select
           onChange={(event) => setColor(event.target.value)}
-          style={{ margin: "40px", padding: "15px", width: "170px", background : "grey", fontSize: "20px", fontWeight: "40px" }}
+          style={{
+            margin: "40px",
+            padding: "15px",
+            width: "170px",
+            background: "grey",
+            fontSize: "20px",
+            fontWeight: "40px",
+          }}
         >
           <option value="green">Green</option>
           <option value="black">black</option>
@@ -105,11 +113,19 @@ const App = () => {
           <option value="orange">orange</option>
         </select>
       </div>
-        <NestedLoop />
-        <Hooks />
-        <Counter counter={counter} setCounter={setCounter} Data={Data} setData={setData}/>
+      <NestedLoop />
+      <Hooks />
+     {
+      Display    ?   <Counter counter={counter} Data={Data}  /> : null
+     }
+      <button onClick={() => setCounter(counter + 1)}>Counter</button>
+      <button onClick={() => setData(Data + 1)}>Data</button>
+       <button onClick={() => setDisplay(!Display)}>Toggle</button>
         
-
+          
+       
+     
+    
     </div>
   );
 };

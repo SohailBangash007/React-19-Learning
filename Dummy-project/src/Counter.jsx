@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const Counter = ({ counter, setCounter, Data, setData }) => {
+const Counter = ({ counter, Data }) => {
   useEffect(() => {
     handleCounter();
   }, [counter]);
@@ -8,6 +8,12 @@ const Counter = ({ counter, setCounter, Data, setData }) => {
   useEffect(() => {
     handleData();
   }, [Data]);
+
+  useEffect(() => {
+    return () => {
+      console.log("This is Hidden Function Called");
+    };
+  }, []);
 
   const handleCounter = () => {
     console.log("handle counter Function is Called ");
@@ -21,9 +27,8 @@ const Counter = ({ counter, setCounter, Data, setData }) => {
     <div>
       <h1>Counter handle with Props and UseEffect used</h1>
       <h2>Counter Value : {counter} </h2>
-      <button onClick={() => setCounter(counter + 1)}>Counter</button>
+
       <h2>Data Value : {Data} </h2>
-      <button onClick={() => setData(Data + 1)}>Data</button>
     </div>
   );
 };
