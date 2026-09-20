@@ -17,6 +17,7 @@ import LoopMap from "./LoopMap";
 import ReuseComponent from "./ReuseComponent";
 import ClockTask from "./ClockTask";
 import NestedLoop from "./NestedLoop";
+import Hooks from "./Hooks";
 
 const App = () => {
   let userObj = {
@@ -102,6 +103,7 @@ const App = () => {
         </select>
       </div>
         <NestedLoop />
+        <Hooks />
 
     </div>
   );
