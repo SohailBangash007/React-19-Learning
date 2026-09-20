@@ -19,6 +19,7 @@ import ClockTask from "./ClockTask";
 import NestedLoop from "./NestedLoop";
 import Hooks from "./Hooks";
 import Counter from "./Counter";
+import InlineStyle from "./InlineStyle";
 
 const App = () => {
   let userObj = {
@@ -122,7 +123,7 @@ const App = () => {
       <button onClick={() => setData(Data + 1)}>Data</button>
        <button onClick={() => setDisplay(!Display)}>Toggle</button>
         
-          
+         <InlineStyle /> 
        
      
     
