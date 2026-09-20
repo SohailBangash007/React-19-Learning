@@ -18,6 +18,7 @@ import ReuseComponent from "./ReuseComponent";
 import ClockTask from "./ClockTask";
 import NestedLoop from "./NestedLoop";
 import Hooks from "./Hooks";
+import Counter from "./Counter";
 
 const App = () => {
   let userObj = {
@@ -43,6 +44,8 @@ const App = () => {
 
   const [student, setStudent] = useState("");
   const [color, setColor] = useState("green");
+  const [counter, setCounter] = useState(0);
+  const [Data, setData] = useState(0);
 
   return (
     <div>
@@ -104,6 +107,8 @@ const App = () => {
       </div>
         <NestedLoop />
         <Hooks />
+        <Counter counter={counter} setCounter={setCounter} Data={Data} setData={setData}/>
+        
 
     </div>
   );

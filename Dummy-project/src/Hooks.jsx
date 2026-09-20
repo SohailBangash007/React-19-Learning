@@ -9,6 +9,11 @@ const Hooks = () => {
     countFunction();
   }, [count]);
 
+  useEffect(() => {
+     CallOnce();
+    
+  }, []);
+
   function CallOnce() {
     console.log("CallOnce Function called");
   }
