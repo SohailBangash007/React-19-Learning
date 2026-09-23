@@ -115,8 +115,8 @@ const ArrayTask = ({textColor,  grid, CardStyle}) => {
               </div>
               <div style={{ padding: "10px", color : textColor }}>
                 <h1>{items.name}</h1>
-                <h2>{items.job}</h2>
-                <h3>{items.intro}</h3>
+                <h4>{items.job}</h4>
+                <p>{items.intro}</p>
               </div>
             
           </div>

@@ -20,6 +20,11 @@ import NestedLoop from "./NestedLoop";
 import Hooks from "./Hooks";
 import Counter from "./Counter";
 import InlineStyle from "./InlineStyle";
+import BootsTrap from "./BootsTrap";
+import NavbarBootsTrap from "./NavbarBootsTrap";
+import UseRefHooks from "./UseRefHooks";
+
+
 
 const App = () => {
   let userObj = {
@@ -51,6 +56,7 @@ const App = () => {
 
   return (
     <div>
+      <NavbarBootsTrap />
       <Header />
       <Functional />
       <ButtonEvents />
@@ -124,6 +130,8 @@ const App = () => {
        <button onClick={() => setDisplay(!Display)}>Toggle</button>
         
          <InlineStyle /> 
+         <BootsTrap />
+         <UseRefHooks />
        
      
     
