@@ -23,8 +23,8 @@ import InlineStyle from "./InlineStyle";
 import BootsTrap from "./BootsTrap";
 import NavbarBootsTrap from "./NavbarBootsTrap";
 import UseRefHooks from "./UseRefHooks";
-
-
+import UnControlled from "./UnControlled";
+import PassFunctionProps from "./PassFunctionProps";
 
 const App = () => {
   let userObj = {
@@ -53,6 +53,13 @@ const App = () => {
   const [counter, setCounter] = useState(0);
   const [Data, setData] = useState(0);
   const [Display, setDisplay] = useState("");
+  const DisplayName = (name) => {
+    alert(name);
+  };
+
+  const GetUser = () => {
+    alert("Hey we Also pass TWO  AND MORE FUNCTION");
+  };
 
   return (
     <div>
@@ -122,19 +129,30 @@ const App = () => {
       </div>
       <NestedLoop />
       <Hooks />
-     {
-      Display    ?   <Counter counter={counter} Data={Data}  /> : null
-     }
+      {Display ? <Counter counter={counter} Data={Data} /> : null}
       <button onClick={() => setCounter(counter + 1)}>Counter</button>
       <button onClick={() => setData(Data + 1)}>Data</button>
-       <button onClick={() => setDisplay(!Display)}>Toggle</button>
-        
-         <InlineStyle /> 
-         <BootsTrap />
-         <UseRefHooks />
-       
-     
-    
+      <button onClick={() => setDisplay(!Display)}>Toggle</button>
+
+      <InlineStyle />
+      <BootsTrap />
+      <UseRefHooks />
+      <UnControlled />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          margin: "20px",
+        }}
+      >
+        <h1>Call Parent Component Function from Child component </h1>
+        <PassFunctionProps DisplayName={DisplayName} name="Sohail-Bangash"  GetUser={GetUser}/>
+        <PassFunctionProps DisplayName={DisplayName} name="Arif-Bangash"    GetUser={GetUser}/>
+        <PassFunctionProps DisplayName={DisplayName} name="Basit-Bangash"   GetUser={GetUser}/>
+        <PassFunctionProps DisplayName={DisplayName} name="Numan-Bangash"   GetUser={GetUser}/>
+      </div>
     </div>
   );
 };

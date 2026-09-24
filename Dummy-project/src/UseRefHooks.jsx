@@ -40,12 +40,12 @@ const UseRefHooks = () => {
           gap: "20px",
         }}
       >
-        <button onClick={Toggle} style={{backgroundColor: "aqua"}}>Toggle</button>
-        <input ref={InputRef} type="text" placeholder="Enter User Name" />
-        <button onClick={HandlerInput} style={{backgroundColor: "aqua"}}>Submit the User Name</button>
+        <button onClick={Toggle} style={{backgroundColor: "aqua", padding:"10px"}}>Toggle</button>
+        <input ref={InputRef} type="text" placeholder="Enter User Name" style={{ padding:"10px"}}/>
+        <button onClick={HandlerInput} style={{backgroundColor: "aqua",  padding:"10px"}}>Submit the User Name</button>
 
         <h1 ref={H1Ref}>Code Step By Step</h1>
-        <button onClick={H1Handler}>Change the Text Color</button>
+        <button onClick={H1Handler} style={{ padding:"10px"}}>Change the Text Color</button>
       </div>
     </div>
   );
