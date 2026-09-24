@@ -25,6 +25,7 @@ import NavbarBootsTrap from "./NavbarBootsTrap";
 import UseRefHooks from "./UseRefHooks";
 import UnControlled from "./UnControlled";
 import PassFunctionProps from "./PassFunctionProps";
+import FormStatus from "./FormStatus";
 
 const App = () => {
   let userObj = {
@@ -153,6 +154,7 @@ const App = () => {
         <PassFunctionProps DisplayName={DisplayName} name="Basit-Bangash"   GetUser={GetUser}/>
         <PassFunctionProps DisplayName={DisplayName} name="Numan-Bangash"   GetUser={GetUser}/>
       </div>
+      <FormStatus />
     </div>
   );
 };
