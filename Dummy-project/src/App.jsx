@@ -30,6 +30,7 @@ import Transition from "./Transition";
 import DerivedState from "./DerivedState";
 import LiftingState from "./LiftingState";
 import LiftingStateDisplay from "./LiftingStateDisplay";
+import ObjectState from "./ObjectState";
 
 const App = () => {
   let userObj = {
@@ -166,6 +167,7 @@ const App = () => {
         <LiftingState setAddUser={setAddUser}/>
         <LiftingStateDisplay AddUser={AddUser}/>
       </div>
+      <ObjectState />
     </div>
   );
 };
