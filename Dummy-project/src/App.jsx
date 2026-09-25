@@ -27,6 +27,9 @@ import UnControlled from "./UnControlled";
 import PassFunctionProps from "./PassFunctionProps";
 import FormStatus from "./FormStatus";
 import Transition from "./Transition";
+import DerivedState from "./DerivedState";
+import LiftingState from "./LiftingState";
+import LiftingStateDisplay from "./LiftingStateDisplay";
 
 const App = () => {
   let userObj = {
@@ -50,6 +53,7 @@ const App = () => {
     age: 21,
   };
 
+ const [AddUser, setAddUser]=useState("");
   const [student, setStudent] = useState("");
   const [color, setColor] = useState("green");
   const [counter, setCounter] = useState(0);
@@ -157,6 +161,11 @@ const App = () => {
       </div>
       <FormStatus />
       <Transition />
+      <DerivedState />
+      <div>
+        <LiftingState setAddUser={setAddUser}/>
+        <LiftingStateDisplay AddUser={AddUser}/>
+      </div>
     </div>
   );
 };
