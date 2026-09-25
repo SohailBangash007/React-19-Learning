@@ -26,6 +26,7 @@ import UseRefHooks from "./UseRefHooks";
 import UnControlled from "./UnControlled";
 import PassFunctionProps from "./PassFunctionProps";
 import FormStatus from "./FormStatus";
+import Transition from "./Transition";
 
 const App = () => {
   let userObj = {
@@ -155,6 +156,7 @@ const App = () => {
         <PassFunctionProps DisplayName={DisplayName} name="Numan-Bangash"   GetUser={GetUser}/>
       </div>
       <FormStatus />
+      <Transition />
     </div>
   );
 };
