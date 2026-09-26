@@ -31,6 +31,7 @@ import DerivedState from "./DerivedState";
 import LiftingState from "./LiftingState";
 import LiftingStateDisplay from "./LiftingStateDisplay";
 import ObjectState from "./ObjectState";
+import UpdatingArrayState from "./UpdatingArrayState";
 
 const App = () => {
   let userObj = {
@@ -168,6 +169,7 @@ const App = () => {
         <LiftingStateDisplay AddUser={AddUser}/>
       </div>
       <ObjectState />
+      <UpdatingArrayState />
     </div>
   );
 };
