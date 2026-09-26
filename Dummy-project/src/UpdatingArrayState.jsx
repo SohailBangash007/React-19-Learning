@@ -14,7 +14,7 @@ const UpdatingArrayState = () => {
   };
 
   const handleAge = (Age) => {
-    dataDetail[dataDetail.length - 1] .Age = Age;
+    dataDetail[dataDetail.length - 1].Age = Age;
     setDataDetail([...dataDetail]);
   };
   return (

@@ -32,6 +32,7 @@ import LiftingState from "./LiftingState";
 import LiftingStateDisplay from "./LiftingStateDisplay";
 import ObjectState from "./ObjectState";
 import UpdatingArrayState from "./UpdatingArrayState";
+import UseActionState from "./UseActionState";
 
 const App = () => {
   let userObj = {
@@ -170,6 +171,7 @@ const App = () => {
       </div>
       <ObjectState />
       <UpdatingArrayState />
+      <UseActionState />
     </div>
   );
 };
