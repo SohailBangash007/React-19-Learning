@@ -33,6 +33,8 @@ import LiftingStateDisplay from "./LiftingStateDisplay";
 import ObjectState from "./ObjectState";
 import UpdatingArrayState from "./UpdatingArrayState";
 import UseActionState from "./UseActionState";
+import Collage from "./Collage";
+import { DataContext } from "./CreateContext";
 
 const App = () => {
   let userObj = {
@@ -56,7 +58,8 @@ const App = () => {
     age: 21,
   };
 
- const [AddUser, setAddUser]=useState("");
+  const [AddUser, setAddUser] = useState("");
+  const [Subject, setSubject] = useState("");
   const [student, setStudent] = useState("");
   const [color, setColor] = useState("green");
   const [counter, setCounter] = useState(0);
@@ -157,21 +160,55 @@ const App = () => {
         }}
       >
         <h1>Call Parent Component Function from Child component </h1>
-        <PassFunctionProps DisplayName={DisplayName} name="Sohail-Bangash"  GetUser={GetUser}/>
-        <PassFunctionProps DisplayName={DisplayName} name="Arif-Bangash"    GetUser={GetUser}/>
-        <PassFunctionProps DisplayName={DisplayName} name="Basit-Bangash"   GetUser={GetUser}/>
-        <PassFunctionProps DisplayName={DisplayName} name="Numan-Bangash"   GetUser={GetUser}/>
+        <PassFunctionProps
+          DisplayName={DisplayName}
+          name="Sohail-Bangash"
+          GetUser={GetUser}
+        />
+        <PassFunctionProps
+          DisplayName={DisplayName}
+          name="Arif-Bangash"
+          GetUser={GetUser}
+        />
+        <PassFunctionProps
+          DisplayName={DisplayName}
+          name="Basit-Bangash"
+          GetUser={GetUser}
+        />
+        <PassFunctionProps
+          DisplayName={DisplayName}
+          name="Numan-Bangash"
+          GetUser={GetUser}
+        />
       </div>
       <FormStatus />
       <Transition />
       <DerivedState />
       <div>
-        <LiftingState setAddUser={setAddUser}/>
-        <LiftingStateDisplay AddUser={AddUser}/>
+        <LiftingState setAddUser={setAddUser} />
+        <LiftingStateDisplay AddUser={AddUser} />
       </div>
       <ObjectState />
       <UpdatingArrayState />
       <UseActionState />
+
+      <div style={{ backgroundColor: "yellowgreen", padding: 10 }}>
+        <DataContext.Provider value={Subject}>
+          <select onChange={(event) => setSubject(event.target.value)} value={Subject}>
+            <option value="" >Select Option</option>
+            <option value="Math">Math</option>
+            <option value="Physic">Physic</option>
+            <option value="English">English</option>
+            <option value="History">History</option>
+            <option value="Urdu">Urdu</option>
+            <option value="Computer Science">Computer Science</option>
+          </select>
+          <button onClick={() => setSubject("")}>Clear Subject</button>
+
+          <h1>Context Api</h1>
+          <Collage />
+        </DataContext.Provider>
+      </div>
     </div>
   );
 };
